@@ -52,8 +52,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-repeat: no-repeat;
   transition: 0.5s all ease;
+  background-size: auto 100%;
 }
 .first-view__wrapper:hover {
   transform: scale(1.1);
@@ -68,6 +68,7 @@ button:hover {
   -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
   width: 60%;
+  background-position: center;
 }
 .first-view-right {
   background-image: url(images/party2.jpg);
@@ -79,4 +80,21 @@ button:hover {
   height: 100%;
   width: 60%;
   right: 0;
+  background-position: center;
+}
+
+@media (max-width: 911px) {
+  .first-view-left {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    width: 100%;
+    height: 60%;
+  }
+  .first-view-right {
+    height: 60%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    bottom: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
